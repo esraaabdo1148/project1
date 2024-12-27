@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 years</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f8ff;
+            text-align: center;
+            padding: 50px;
+            overflow: hidden;
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #d32f2f; /*     */
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #d32f2f, 0 0 20px #d32f2f, 0 0 30px #d32f2f;
+            }
+
+            100% {
+                text-shadow: 0 0 20px #d32f2f, 0 0 30px #d32f2f, 0 0 40px #d32f2f;
+            }
+        }
+
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: heart-beat 1s infinite;
+        }
+
+        @keyframes heart-beat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .balloons {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            animation: float 5s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-50px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .ninja {
+            position: absolute;
+            bottom: 5%;
+            left: 20%;
+            font-size: 50px;
+            animation: ninja-dance 2s infinite;
+        }
+
+        @keyframes ninja-dance {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
+        }
+
+        .butterfly {
+            position: absolute;
+            top: 15%;
+            right: 20%;
+            font-size: 50px;
+            animation: butterfly-fly 3s infinite;
+        }
+
+        @keyframes butterfly-fly {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(-10px, -20px) rotate(-15deg);
+            }
+        }
+
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.8;
+            animation: snow 10s linear infinite;
+        }
+
+        .snowflake {
+            position: absolute;
+            background-color: #ffffff;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            animation: fall 10s linear infinite;
+        }
+
+        @keyframes snow {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fall {
+            0% {
+                top: -10%;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
+        .content {
+            margin-top: 20px;
+            font-size: 25px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 80%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="snowflake" style="left: 25%; animation-delay: 2s;"></div>
+        <div class="snowflake" style="left: 50%; animation-delay: 4s;"></div>
+        <div class="snowflake" style="left: 75%; animation-delay: 6s;"></div>
+        <div class="snowflake" style="left: 90%; animation-delay: 8s;"></div>
+    </div>
+
+    <div class="balloons">
+        🎈🥳🎉🎈🥳🎉🎈
+    </div>
+
+    <h1>اكتمل قمري</h1>
+    <div class="heart">❤</div>
+    <div class="ninja">🥷</div>
+    <div class="butterfly">🦋</div>
+    <p class="content">
+        كل سنة وانت طيب و بخير يا احمد ♥
+ 
+    </p>
+</body>
+
+
+</html>
